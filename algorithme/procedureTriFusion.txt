@@ -1,0 +1,22 @@
+//ANDZAMA AMOUGOU CEDDRIC CHATEAUBRIAND 22W2177
+
+ALGORITHME DE TRI FUSION
+
+
+    PROCEDURE tri_fusion ( TABLEAU a[1:n])
+    FAIRE
+        SI TABLEAU EST VIDE RENVOYER TABLEAU
+        gauche = partie_gauche de TABLEAU
+        droite = partie_droite de TABLEAU
+        gauche = tri_fusion gauche
+        droite = tri_fusion droite
+        renvoyer fusion gauche droite
+        POUR i VARIANT DE 1 A n - 1 - passage FAIRE
+            SI a[i] > a[i+1] ALORS
+                echanger a[i] ET a[i+1]
+                permut ← VRAI
+            FIN SI
+        FIN POUR
+        passage ← passage + 1
+    FIN PROCEDURE
+
